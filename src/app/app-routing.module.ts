@@ -19,10 +19,15 @@ const routes: Routes = [
   },
   {
     path: 'kategori',
-    loadChildren: () => import('./kategori/kategori.module').then( m => m.KategoriPageModule)
-  },  {
+    loadChildren: () => import('./kategori/kategori.module').then(m => m.KategoriPageModule)
+  },
+  {
     path: 'kategoripolitik',
-    loadChildren: () => import('./kategoripolitik/kategoripolitik.module').then( m => m.KategoripolitikPageModule)
+    loadChildren: () => import('./kategoripolitik/kategoripolitik.module').then(m => m.KategoripolitikPageModule)
+  },
+  {
+    path: 'detail-berita/:id',
+    loadComponent: () => import('./detail-berita/detail-berita.page').then(m => m.DetailBeritaPage)
   },
 
 
@@ -34,4 +39,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

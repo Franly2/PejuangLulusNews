@@ -34,8 +34,9 @@ export class HomePage implements OnInit {
     this.semuaKategori = getAllKategori();
   }
 
-  bacaBerita(idBerita: number) {
-    this.router.navigate(['/baca-berita', idBerita]);
+  bacaBerita(id: number) {
+    console.log('Navigasi ke detail berita dengan ID:', id);
+    this.router.navigateByUrl(`/detail-berita/${id}`);
   }
 
   lihatKategori(idKategori: number) {
@@ -52,16 +53,16 @@ export class HomePage implements OnInit {
     }
   }
   getNamaKategori(berita: BeritaDetail): string {
-  if (this.kategoriAktif) {
-    // cari index kategori yang cocok
-    const idx = berita.idKategori.indexOf(this.kategoriAktif);
-    if (idx !== -1) {
-      return berita.namaKategori[idx];
+    if (this.kategoriAktif) {
+      // cari index kategori yang cocok
+      const idx = berita.idKategori.indexOf(this.kategoriAktif);
+      if (idx !== -1) {
+        return berita.namaKategori[idx];
+      }
     }
+    // fallback: pakai kategori pertama
+    return berita.namaKategori[0];
   }
-  // fallback: pakai kategori pertama
-  return berita.namaKategori[0];
-}
 
 
   doLogout() {

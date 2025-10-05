@@ -1,0 +1,32 @@
+ion-content {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.gambar-utama {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.judul-berita {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+  margin: 8px 0 4px 0;
+}
+
+.tanggal {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 16px;
+}
+
+.isi-berita {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+  margin-bottom: 24px;
+  margin-left: 10px;
+}
+

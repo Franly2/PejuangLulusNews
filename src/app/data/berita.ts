@@ -7,13 +7,14 @@ export interface Berita {
   idKategori: number[];
   gambar_konten: string[];
   timestamp: Date;
+  isi : string;
 }
 
 export interface BeritaDetail extends Berita {
   namaKategori: string[];
 }
 
-const BERITA: Berita[] = [
+export const BERITA: Berita[] = [
   {
     id: 101,
     judul: 'Framework Ionic 8 Resmi Dirilis',
@@ -26,6 +27,7 @@ const BERITA: Berita[] = [
       'https://placehold.co/800x600/007bff/FFFFFF?text=Gambar+4',
     ],
     timestamp: new Date('2025-09-26T10:00:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
   },
   {
     id: 102,
@@ -39,6 +41,8 @@ const BERITA: Berita[] = [
       'https://placehold.co/800x600/28a745/FFFFFF?text=Laga+4',
     ],
     timestamp: new Date('2025-09-27T11:30:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 103,
@@ -52,6 +56,8 @@ const BERITA: Berita[] = [
       'https://placehold.co/800x600/ffc107/000000?text=Info+4',
     ],
     timestamp: new Date('2025-09-27T14:00:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 104,
@@ -65,6 +71,8 @@ const BERITA: Berita[] = [
       'https://placehold.co/800x600/dc3545/FFFFFF?text=Artis+4',
     ],
     timestamp: new Date('2025-09-25T09:00:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 105,
@@ -78,6 +86,8 @@ const BERITA: Berita[] = [
       'https://placehold.co/800x600/6c757d/FFFFFF?text=Debat+4',
     ],
     timestamp: new Date('2025-09-24T18:00:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 106,
@@ -86,6 +96,8 @@ const BERITA: Berita[] = [
     idKategori: [2],
     gambar_konten: ['https://placehold.co/800x600/28a745/FFFFFF?text=Jadwal'],
     timestamp: new Date('2025-09-28T08:00:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 107,
@@ -94,6 +106,8 @@ const BERITA: Berita[] = [
     idKategori: [1],
     gambar_konten: ['https://placehold.co/800x600/007bff/FFFFFF?text=Review'],
     timestamp: new Date('2025-09-28T09:15:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 108,
@@ -102,6 +116,8 @@ const BERITA: Berita[] = [
     idKategori: [3],
     gambar_konten: ['https://placehold.co/800x600/ffc107/000000?text=Grafik'],
     timestamp: new Date('2025-09-28T10:30:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 109,
@@ -110,6 +126,8 @@ const BERITA: Berita[] = [
     idKategori: [4],
     gambar_konten: ['https://placehold.co/800x600/dc3545/FFFFFF?text=Poster'],
     timestamp: new Date('2025-09-27T20:00:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 110,
@@ -120,6 +138,8 @@ const BERITA: Berita[] = [
       'https://placehold.co/800x600/6c757d/FFFFFF?text=Konferensi',
     ],
     timestamp: new Date('2025-09-26T15:00:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 111,
@@ -128,6 +148,8 @@ const BERITA: Berita[] = [
     idKategori: [1, 3],
     gambar_konten: ['https://placehold.co/800x600/007bff/FFFFFF?text=Dampak'],
     timestamp: new Date('2025-09-25T13:00:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 112,
@@ -136,6 +158,8 @@ const BERITA: Berita[] = [
     idKategori: [2],
     gambar_konten: ['https://placehold.co/800x600/28a745/FFFFFF?text=Pemain'],
     timestamp: new Date('2025-09-24T11:00:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 113,
@@ -144,6 +168,8 @@ const BERITA: Berita[] = [
     idKategori: [4],
     gambar_konten: ['https://placehold.co/800x600/dc3545/FFFFFF?text=Piala'],
     timestamp: new Date('2025-09-23T21:00:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 114,
@@ -152,6 +178,8 @@ const BERITA: Berita[] = [
     idKategori: [3],
     gambar_konten: ['https://placehold.co/800x600/ffc107/000000?text=Tips'],
     timestamp: new Date('2025-09-22T16:00:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
   {
     id: 115,
@@ -160,6 +188,8 @@ const BERITA: Berita[] = [
     idKategori: [1],
     gambar_konten: ['https://placehold.co/800x600/007bff/FFFFFF?text=Security'],
     timestamp: new Date('2025-09-21T14:45:00'),
+    isi : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis, dui id vulputate iaculis, odio libero tristique turpis, id rhoncus ipsum velit non nibh. Aliquam lorem lorem, porta at consectetur id, lobortis sed nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus tortor ut lorem pulvinar sagittis. Praesent venenatis vestibulum placerat. Pellentesque consectetur ante bibendum dui elementum, ac sodales lectus maximus. Donec venenatis pellentesque metus nec mattis.",
+
   },
 ];
 

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ namaKategori }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-img [src]="berita?.foto_utama" class="gambar-utama"></ion-img>
+  <ion-list>
+    <ion-list-header>
+      <h1 class="judul-berita">{{ berita?.judul }}</h1>
+    </ion-list-header>
+    <ion-item>
+      <p class="tanggal">{{ berita?.timestamp | date: 'fullDate' }}</p>
+    </ion-item>
+  </ion-list>
+  <p class="isi-berita">{{ berita?.isi }}</p>
+</ion-content>
